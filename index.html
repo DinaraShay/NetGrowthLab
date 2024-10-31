@@ -6,7 +6,8 @@
     <title>NeyGrownLab</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />   
 </head>
 <body>
     <header class="header container">
@@ -14,16 +15,37 @@
             <img src="/assets/img/svg/logo.svg" alt="Логотип компании NeyGrownLab">
         </a>
         <nav class="header-nav">
-            <a class="header-nav__item" href="#">Кейсы</a>
-            <a class="header-nav__item" href="#">Этапы работы</a>
-            <a class="header-nav__item" href="#">Сферы бизнеса</a>
-            <a class="header-nav__item" href="#">Наши клиенты</a>
-            <a class="header-nav__item" href="#">Контакты</a>
+            <a class="header-nav__item" href="#case">Кейсы</a>
+            <a class="header-nav__item" href="#type-of-work">Этапы работы</a>
+            <a class="header-nav__item" href="#industries">Сферы бизнеса</a>
+            <a class="header-nav__item" href="#clients">Наши клиенты</a>
+            <a class="header-nav__item" href="#contacts">Контакты</a>
         </nav>
         <div class="btn-call">
             <a href="">перезвоните мне</a>
         </div>
     </header>
+
+    <nav class="mobile-menu">
+        <a href="/" class="logo">
+            <img src="/assets/img/svg/logo-white.svg" alt="Логотип компании NeyGrownLab">
+        </a>
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#case" class="mobile-menu__link">Кейсы</a></li>
+            <li class="mobile-menu__item"><a href="#type-of-work" class="mobile-menu__link">Этапы работы</a></li>
+            <li class="mobile-menu__item"><a href="#industries" class="mobile-menu__link">Сферы бизнеса</a></li>
+            <li class="mobile-menu__item"><a href="#clients" class="mobile-menu__link">Наши клиенты</a></li>
+            <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
+            <div class="btn-green">
+                <a href="">перезвоните мне</a>
+            </div>
+        </ul>
+        </div>
+    </nav>
+    
     <main class="main">
         <section id="banner" class="container">
             <div class="banner-info">
@@ -53,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section id="industries" class="m-100 dark-section container"> 
+        <section id="industries" class="m-100 dark-section container wow animate__ animate__fadeIn animated" data-wow-offset="10"  data-wow-iteration="10"> 
             <h2 class="title--40">Сферы бизнеса</h2>
             <div class="industries-types">
                 <div class="industries-types-list">
@@ -65,7 +87,7 @@
                         числа новых клиентов</p>
                 </div>
                 <div class="industries-types-list">
-                    <h3 class="title-types"><img src="/assets/img/icons/car.png" alt="Автоиндустрия">Автоиндустрия</>
+                    <h3 class="title-types"><img src="/assets/img/icons/car.png" alt="Автоиндустрия">Автоиндустрия</h3>
                     <p>Разработаем под вас скрипт, привлечем заинтересованную
                         аудиторию, а вам останется только продать :)</p>
                 </div>
@@ -150,7 +172,7 @@
             <h2 class="title--48">Получите подробный <span class="color-green">медиа-план</span></h2>
             <p class="banner-text">Пришлите ссылки на сайты конкурентов, укажите<br>сферу вашего бизнеса и ответьте на 5 вопросов</p>
             <div class="btn-green">
-                <a href="">Зпросить расчет</a>
+                <a href="">Запросить расчет</a>
             </div>
            </div>
         </section>
@@ -200,6 +222,7 @@
             <div class="types-list">
                 <div class="step-block">
                     <span class="step">5&nbsp;шаг</span>
+                    <img src="/assets/img/line.png" alt="">
                 </div>
                 <div class="step-text">
                     <span>Результат</span>
@@ -209,7 +232,7 @@
         </div>
         </section>
         <section id="case" class="container m-100">
-            <h2 class="title--40 color-black">NetGrowthLab — отраслевые кейсы</h2>
+            <h2 class="title--40 color-black p-20">NetGrowthLab — отраслевые кейсы</h2>
             <div class="portfolio-cases">
                 <div class="portfolio-cases-list dark-section">
                     <img src="/assets/img/case1.png" alt="">
@@ -369,7 +392,7 @@
         <section id="sertificate" class="container m-100">
             <div class="sertificate-block">
                 <h3 class="title--40 text-black">Мы работаем официально, <br>
-                    <span class="dark-back">наши&nbsp;сертификаты&nbsp;и&nbsp;допуски:</span></h3>
+                    <span class="dark-back">наши&nbsp;сертификаты и допуски:</span></h3>
                     <div class="sertificate-image">
                         <a href="/assets/img/sertificate.png" data-fancybox="gallery">
                             <img src = "/assets/img/sertificate.png" alt ="Сертификат">
@@ -398,8 +421,8 @@
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   
+
     <footer class="footer">
         <div class="footer-block container">
             <div class="footer-block-item">
@@ -414,6 +437,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+       $(function(){
+  new WOW().init();
+});
+    </script>
     <script>
         function accordion(section, heading, list){
 	$(section).each(function(){
@@ -473,5 +504,6 @@
 }
 accordion('.nav-item', '.nav-item-inner-heading', '.nav-sub-list');
     </script>
+    
 </body>
 </html>
